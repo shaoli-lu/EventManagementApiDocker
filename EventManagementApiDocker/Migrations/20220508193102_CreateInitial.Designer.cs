@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventManagementApiDocker.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220508001328_CreateInitial")]
+    [Migration("20220508193102_CreateInitial")]
     partial class CreateInitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
