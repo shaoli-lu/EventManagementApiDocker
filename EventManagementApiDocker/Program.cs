@@ -6,6 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddSingleton<IEventRepository, EventRepository>();
+
+// Use PM command Project dir dotnet ef migrations add CreateInitial  dotnet ef database update
+// 
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
